@@ -1,10 +1,12 @@
-name: 'Your name here'
+# TODO write document action metadata
+name: Auto Assigner
 description: 'Provide a description here'
-author: 'Your name or organization here'
+author: Luca Ercole
 inputs:
   myInput:              # change this
     description: 'input description here'
     default: 'default value if applicable'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'

@@ -1,8 +1,8 @@
 {
   "name": "typescript-action",
   "version": "0.0.0",
-  "private": true,
-  "description": "TypeScript template action",
+  "private": false,
+  "description": "A file-based GitHub Action to assign collaborators to issues and pull requests",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/erclu/auto-assigner.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Luca Ercole",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0"
