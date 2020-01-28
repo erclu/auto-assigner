@@ -1,0 +1,17 @@
+name: Conventional Commits
+
+on: push
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  commitsar:
+    name: Check conformity to Conventional Commits specification
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: run commitsar
+        uses: outillage/commitsar@v0.9.0
