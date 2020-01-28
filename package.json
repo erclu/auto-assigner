@@ -1,14 +1,14 @@
 {
   "name": "typescript-action",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "description": "A file-based GitHub Action to assign collaborators to issues and pull requests",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
-    "lint": "tsc --noEmit && eslint src/**/*.ts --quiet --fix",
+    "lint": "eslint src/**/*.ts --quiet --fix",
     "pack": "ncc build",
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
