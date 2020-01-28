@@ -1,6 +1,10 @@
 name: Best practices for source files
 
-on: push
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   check-bom:
