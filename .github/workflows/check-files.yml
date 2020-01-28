@@ -1,0 +1,24 @@
+name: Best practices for source files
+
+on: push
+
+jobs:
+  check-bom:
+    name: no BOMs found
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: check for BOMs
+        uses: arma-actions/bom-check@v1.0
+
+  check-crlf:
+    name: no CRLF endings found
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: check for CRLF endings
+        uses: erclu/check-crlf@v1

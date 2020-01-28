@@ -97,3 +97,6 @@ Thumbs.db
 # Ignore built ts files
 __tests__/runner/*
 lib/**/*
+
+# My prefix for ignored files that I want inside my local repo
+UNTRACKED_*
