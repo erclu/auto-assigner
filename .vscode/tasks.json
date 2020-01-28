@@ -27,10 +27,9 @@
     },
     {
       "type": "npm",
-      "script": "lint",
+      "script": "lint-and-fix",
       "problemMatcher": [
-        "$eslint-stylish",
-        "$tsc"
+        "$eslint-stylish"
       ]
     },
   ]

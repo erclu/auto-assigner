@@ -8,10 +8,11 @@
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
-    "lint": "eslint src/**/*.ts --quiet --fix",
+    "lint": "eslint src/**/*.ts --quiet",
+    "lint-and-fix": "eslint src/**/*.ts --quiet --fix",
     "pack": "ncc build",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
+    "all": "npm run build && npm run format && npm run lint-and-fix && npm run pack && npm test"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
   },
   "devDependencies": {
     "@types/jest": "^25.1.0",
-    "@types/node": "^13.5.0",
+    "@types/node": "^13.5.1",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "@zeit/ncc": "^0.21.0",
