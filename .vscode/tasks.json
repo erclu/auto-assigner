@@ -27,6 +27,13 @@
     },
     {
       "type": "npm",
+      "script": "lint",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "type": "npm",
       "script": "lint-and-fix",
       "problemMatcher": [
         "$eslint-stylish"
