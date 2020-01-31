@@ -1,6 +1,6 @@
 # Auto Assigner Action
 
-A file-based GitHub Action to assign collaborators to issues and pull requests.
+A GitHub Action to assign collaborators to issues and pull requests based on a configuration file.
 
 ## Badges
 
@@ -11,3 +11,12 @@ A file-based GitHub Action to assign collaborators to issues and pull requests.
 ![Conventional Commits](https://github.com/erclu/auto-assigner/workflows/Conventional%20Commits/badge.svg)
 
 ![Best practices for source files](https://github.com/erclu/auto-assigner/workflows/Best%20practices%20for%20source%20files/badge.svg)
+
+<!-- ## Usage -->
+<!-- TODO write usage -->
+
+<!-- ### Examples -->
+
+<!-- ## Development -->
+<!-- TODO write development docs -->
+
