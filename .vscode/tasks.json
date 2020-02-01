@@ -17,6 +17,14 @@
     },
     {
       "type": "npm",
+      "script": "build",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "npm",
       "script": "format",
       "problemMatcher": []
     },
@@ -29,9 +37,30 @@
       "type": "npm",
       "script": "lint",
       "problemMatcher": [
-        "$eslint-stylish",
-        "$tsc"
+        "$eslint-stylish"
       ]
+    },
+    {
+      "type": "npm",
+      "script": "lint-and-fix",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "type": "npm",
+      "script": "pack",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "type": "npm",
+      "script": "all",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      "group": "build"
     },
   ]
 }
