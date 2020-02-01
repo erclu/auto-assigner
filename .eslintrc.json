@@ -18,8 +18,9 @@
     "sourceType": "module"
   },
   "plugins": [
-    "jest",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "github",
+    "jest"
   ],
   "root": true,
   "rules": {
@@ -102,6 +103,10 @@
       "error",
       "smart"
     ],
+    "func-style": [
+      "error",
+      "expression"
+    ],
     "guard-for-in": "error",
     "id-blacklist": [
       "error",
@@ -159,6 +164,10 @@
     "prefer-const": "error",
     "radix": "error",
     "spaced-comment": "error",
+    // TODO add and configure "import" plugin for advanced sorting
+    // ref: https://github.com/benmosher/eslint-plugin-import/blob/master/README.md
+    // ref: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+    "sort-imports": "error",
     "use-isnan": "error"
   }
 }

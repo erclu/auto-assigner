@@ -19,4 +19,3 @@ A GitHub Action to assign collaborators to issues and pull requests based on a c
 
 <!-- ## Development -->
 <!-- TODO write development docs -->
-
