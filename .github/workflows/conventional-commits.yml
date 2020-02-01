@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # This does not work
+      # - uses: actions/checkout@v2
+      #   with:
+      #     fetch-depth: 0
       - uses: actions/checkout@v1
 
       - name: run commitsar
