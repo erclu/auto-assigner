@@ -5,10 +5,10 @@ branding:
   icon: users
   color: blue
 inputs:
-  repo-token:
+  github-token:
     description: the authentication token provided by github
-    # TODO check if this works
-    default: ${{ secrets.GITHUB_TOKEN }}
+    # TODO find way to catch token automatically. When it was like this it didn't work
+    # default: ${{ secrets.GITHUB_TOKEN }}
     required: true
 runs:
   using: node12
