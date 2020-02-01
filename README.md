@@ -1,20 +1,21 @@
 # Auto Assigner Action
 
-A file-based GitHub Action to assign collaborators to issues and pull requests.
+A GitHub Action to assign collaborators to issues and pull requests based on a configuration file.
 
 ## Badges
 
-<!-- TODO link directly to workflow definition? -->
-<p align="center">
-  <a href="https://github.com/erclu/auto-assigner">
-    <img alt="typescript-action status" src="https://github.com/erclu/auto-assigner/workflows/Build%20and%20Test/badge.svg"/>
-  </a>
+![Lint, Build and Test - latest](https://github.com/erclu/auto-assigner/workflows/Build%20and%20Test/badge.svg)
 
-  <a href="https://github.com/erclu/auto-assigner">
-    <img alt="commitizen action status" src="https://github.com/erclu/auto-assigner/workflows/Conventional%20Commits/badge.svg" />
-  </a>
+![Lint, Build and Test - master](https://github.com/erclu/auto-assigner/workflows/Lint%2C%20Build%20and%20Test/badge.svg?branch=master)
 
-  <a href="https://github.com/erclu/auto-assigner">
-    <img alt="typescript-action status" src="https://github.com/erclu/auto-assigner/workflows/Best%20practices%20for%20source%20files/badge.svg" />
-  </a>
-</p>
+![Conventional Commits](https://github.com/erclu/auto-assigner/workflows/Conventional%20Commits/badge.svg)
+
+![Best practices for source files](https://github.com/erclu/auto-assigner/workflows/Best%20practices%20for%20source%20files/badge.svg)
+
+<!-- ## Usage -->
+<!-- TODO write usage -->
+
+<!-- ### Examples -->
+
+<!-- ## Development -->
+<!-- TODO write how to do development -->

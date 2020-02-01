@@ -1,12 +1,15 @@
-# TODO write document action metadata
 name: Auto Assigner
-description: 'Provide a description here'
+description: A GitHub Action to assign collaborators to issues and pull requests based on a configuration file.
 author: Luca Ercole
+branding:
+  icon: users
+  color: blue
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
-    required: false
+  github-token:
+    description: the authentication token provided by github
+    # TODO find way to catch token automatically. When it was like this it didn't work
+    # default: ${{ secrets.GITHUB_TOKEN }}
+    required: true
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: node12
+  main: dist/index.js

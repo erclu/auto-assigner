@@ -2,7 +2,6 @@
   "arrowParens": "always",
   "bracketSpacing": false,
   "endOfLine": "lf",
-  "parser": "typescript",
   "printWidth": 88,
   "trailingComma": "all"
 }
