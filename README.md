@@ -4,9 +4,7 @@ A GitHub Action to assign collaborators to issues and pull requests based on a c
 
 ## Badges
 
-![Lint, Build and Test - latest](https://github.com/erclu/auto-assigner/workflows/Build%20and%20Test/badge.svg)
-
-![Lint, Build and Test - master](https://github.com/erclu/auto-assigner/workflows/Lint%2C%20Build%20and%20Test/badge.svg?branch=master)
+![Lint, Build and Test - latest](https://github.com/erclu/auto-assigner/workflows/Lint%2C%20Build%20and%20Test/badge.svg)
 
 ![Conventional Commits](https://github.com/erclu/auto-assigner/workflows/Conventional%20Commits/badge.svg)
 

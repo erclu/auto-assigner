@@ -4,12 +4,19 @@ author: Luca Ercole
 branding:
   icon: users
   color: blue
+
 inputs:
+  configuration-path:
+    description: The path to the configuration file. Default .github/ASSIGNEES.yml
+    default: .github/ASSIGNEES.yml
+    required: true
+
   github-token:
-    description: the authentication token provided by github
+    description: The authentication token provided by github
     # TODO find way to catch token automatically. When it was like this it didn't work
     # default: ${{ secrets.GITHUB_TOKEN }}
     required: true
+
 runs:
   using: node12
   main: dist/index.js
