@@ -8,8 +8,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:github/es6"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -164,7 +163,7 @@
     "prefer-const": "error",
     "radix": "error",
     "spaced-comment": "error",
-    // TODO add and configure "import" plugin for advanced sorting
+    // TODO add and configure "import" plugin for advanced import sorting
     // ref: https://github.com/benmosher/eslint-plugin-import/blob/master/README.md
     // ref: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     "sort-imports": "error",

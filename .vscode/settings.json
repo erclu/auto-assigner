@@ -1,7 +1,4 @@
 {
-  "files.exclude": {
-    "lib/**": true
-  },
   "gulp.autoDetect": "off",
   "jake.autoDetect": "off",
   "grunt.autoDetect": "off",

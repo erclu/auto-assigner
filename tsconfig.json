@@ -19,9 +19,11 @@
     "strict": true,
     "target": "es6",
   },
+  "include": [
+    "./src"
+  ],
   "exclude": [
-    "dist",
-    "node_modules",
-    "**/*.test.ts"
+    "./dist",
+    "./node_modules"
   ]
 }
