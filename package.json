@@ -6,10 +6,11 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
+    "check-format": "prettier --check **/*.ts",
+    "coverage": "jest --coverage",
+    "fix": "eslint src/**/*.ts --quiet --fix --max-warnings 0",
     "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts --quiet --max-warnings 0",
-    "lint-and-fix": "eslint src/**/*.ts --quiet --fix --max-warnings 0",
     "pack": "ncc build",
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint-and-fix && npm run pack && npm test"
@@ -33,21 +34,22 @@
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.1",
-    "@types/node": "^13.7.0",
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
-    "@zeit/ncc": "^0.21.0",
+    "@types/jest": "^25.1.4",
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "^13.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "@zeit/ncc": "^0.21.1",
     "eslint": "^6.8.0",
-    "eslint-plugin-github": "^3.4.0",
-    "eslint-plugin-jest": "^23.6.0",
-    "flow-bin": "^0.117.0",
+    "eslint-plugin-github": "^3.4.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "flow-bin": "^0.120.1",
     "graphql": "^14.6.0",
     "jest": "^25.1.0",
     "jest-circus": "^25.1.0",
-    "nock": "^11.7.2",
+    "nock": "^12.0.2",
     "prettier": "^1.19.1",
-    "ts-jest": "^25.1.0",
-    "typescript": "^3.7.5"
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
   }
 }
