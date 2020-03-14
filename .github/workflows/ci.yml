@@ -1,6 +1,7 @@
 name: Lint, Build and Test
 
-on: # rebuild any PRs and main branch changes
+# run workflow on any PRs and main branch changes
+on:
   pull_request:
   push:
     branches:
@@ -16,7 +17,7 @@ jobs:
 
       - name: Run ESLint from package.json script
         run: |
-          npm install
+          npm ci
           npm run lint --silent
 
   # make sure build/ci work properly
@@ -30,7 +31,7 @@ jobs:
 
       - name: Run ESLint from package.json script
         run: |
-          npm install
+          npm ci
           npm run all
 
   # make sure the action works on a clean machine without building
