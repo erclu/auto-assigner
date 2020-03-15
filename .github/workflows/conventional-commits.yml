@@ -26,10 +26,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      # This does not work
-      # - uses: actions/checkout@v2
-      #   with:
-      #     fetch-depth: 0
 
       - name: Run commitsar
-        uses: outillage/commitsar@v0.9.0
+        uses: docker://outillage/commitsar:0.11.1

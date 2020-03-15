@@ -1,6 +1,6 @@
 {
   "name": "typescript-action",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "A file-based GitHub Action to assign collaborators to issues and pull requests",
   "main": "lib/main.js",
@@ -13,7 +13,7 @@
     "lint": "eslint src/**/*.ts --quiet --max-warnings 0",
     "pack": "ncc build",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint-and-fix && npm run pack && npm test"
+    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
   },
   "repository": {
     "type": "git",
