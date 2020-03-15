@@ -1,0 +1,20 @@
+labels:
+  - labelWithSingleAssignee: "@user1"
+  - labelWithSingleAssigneeArray:
+      - "@user2"
+  - labelWithMultipleAssignees:
+      - "@user3"
+      - "@user4"
+  - label with spaces:
+      - "@user5"
+
+folders:
+  - /folder/:
+      - "@folder-owner"
+  - /folder/file.ext:
+      - "@file-owner"
+  - /another-folder/:
+      - "@another-folder-owner1"
+      - "@another-folder-owner2"
+  - /folder with spaces/:
+      - "@folder-with-spaces-owner"

@@ -1,0 +1,28 @@
+name: Best practices for source files
+
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  check-bom:
+    name: No BOMs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check for BOMs
+        uses: arma-actions/bom-check@v1.0
+
+  check-crlf:
+    name: No CRLF endings
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check for CRLF endings
+        uses: erclu/check-crlf@v1

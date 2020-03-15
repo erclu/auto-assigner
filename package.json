@@ -1,45 +1,55 @@
 {
   "name": "typescript-action",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "A file-based GitHub Action to assign collaborators to issues and pull requests",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
+    "check-format": "prettier --check **/*.ts",
+    "coverage": "jest --coverage",
+    "fix": "eslint src/**/*.ts --quiet --fix --max-warnings 0",
     "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint src/**/*.ts --quiet --max-warnings 0",
     "pack": "ncc build",
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/erclu/auto-assigner.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Luca Ercole",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^2.1.0",
+    "@actions/glob": "^0.1.0",
+    "@actions/io": "^1.0.2",
+    "js-yaml": "^3.13.1"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.7.12",
-    "@typescript-eslint/parser": "^2.8.0",
-    "@zeit/ncc": "^0.20.5",
-    "eslint": "^5.16.0",
-    "eslint-plugin-github": "^2.0.0",
-    "eslint-plugin-jest": "^22.21.0",
-    "jest": "^24.9.0",
-    "jest-circus": "^24.9.0",
-    "js-yaml": "^3.13.1",
+    "@types/jest": "^25.1.4",
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "^13.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "@zeit/ncc": "^0.21.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-github": "^3.4.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "flow-bin": "^0.120.1",
+    "graphql": "^14.6.0",
+    "jest": "^25.1.0",
+    "jest-circus": "^25.1.0",
+    "nock": "^12.0.2",
     "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.6.4"
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
   }
 }

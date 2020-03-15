@@ -1,0 +1,8 @@
+{
+  "gulp.autoDetect": "off",
+  "jake.autoDetect": "off",
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "typescript.tsc.autoDetect": "off",
+  "typescript.tsdk": "node_modules/typescript/lib",
+}
