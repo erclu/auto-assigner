@@ -27,7 +27,7 @@
   "author": "Luca Ercole",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.2",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^2.1.0",
     "@actions/glob": "^0.1.0",
     "@actions/io": "^1.0.2",
